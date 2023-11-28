@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cake's22</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/javascript/javascript.js">
   </head>
   <body>
     <nav>
@@ -24,22 +25,18 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#aboutus">About</a></li>
-            <li><a href="#support">Menu</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#team">Menu</a></li>
+
             <li><a href="#blog">Team</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="layar-penuh">
+    <!-- <div class="layar-penuh"> -->
       <header id="home">
-        <div class="overlay"></div>
-        <video autoplay muted loop>
-          <source src="asset/video-indonesia.mp4" type="video/mp4" />
-        </video>
+        
         <div class="intro">
           <h3>Welcome to Cake's 22 Bakery</h3>
           <p>
@@ -64,7 +61,7 @@
             </div>
           </div>
         </section>
-
+      </div>
 
         <!-- MENU----------------- -->
         <section class="abuabu" id="support">
@@ -123,15 +120,33 @@
               <div>
                 <img src="asset/coklat5.jpg" />
                 <h6>John Doe</h6>
-                <span>Indonesia</span>
+                <span>Rp.45.000</span>
               </div>
               <div>
                 <img src="asset/coklat6.jpg" />
                 <h6>John Brown</h6>
-                <span>France</span>
+                <span>Rp.40.000</span>
               </div>
               <div>
                 <img src="asset/coklat7.jpg" />
+                <h6>Michaell</h6>
+                <span>Rp.50.000</span>
+              </div>
+            </div>
+            <br>
+            <div class="tim">
+              <div>
+                <img src="asset/3.jpg" />
+                <h6>John Blo</h6>
+                <span>Rp.25.000</span>
+              </div>
+              <div>
+                <img src="asset/10.jpg" />
+                <h6>Di Brown</h6>
+                <span>Rp.35.000</span>
+              </div>
+              <div>
+                <img src="asset/14.jpg" />
                 <h6>Michaell</h6>
                 <span>Spain</span>
               </div>
@@ -139,35 +154,17 @@
             <br>
             <div class="tim">
               <div>
-                <img src="asset/coklat5.jpg" />
+                <img src="asset/15.jpg" />
                 <h6>John Doe</h6>
                 <span>Indonesia</span>
               </div>
               <div>
-                <img src="asset/coklat6.jpg" />
+                <img src="asset/16.jpg" />
                 <h6>John Brown</h6>
                 <span>France</span>
               </div>
               <div>
-                <img src="asset/coklat7.jpg" />
-                <h6>Michaell</h6>
-                <span>Spain</span>
-              </div>
-            </div>
-            <br>
-            <div class="tim">
-              <div>
-                <img src="asset/coklat5.jpg" />
-                <h6>John Doe</h6>
-                <span>Indonesia</span>
-              </div>
-              <div>
-                <img src="asset/coklat6.jpg" />
-                <h6>John Brown</h6>
-                <span>France</span>
-              </div>
-              <div>
-                <img src="asset/coklat7.jpg" />
+                <img src="asset/cake2.jpg" />
                 <h6>Michaell</h6>
                 <span>Spain</span>
               </div>
@@ -177,7 +174,7 @@
 
 
         <!-- BLOG TAPI JADINE---------------------- -->
-        <section class="abuabu" id="blog">
+        <section class="bawah" id="blog">
           <div class="layar-dalam">
             <h3>Our Team</h3>
             <p class="ringkasan">
@@ -254,18 +251,33 @@
 
  <!-- <------------------------ FROM ORDER---------------------------->
 
-
-  
-
-
       </main>
-
-
-
-
-
-      
-
+      <div class="container">
+        <div id="error"></div>
+    <form id="form" action="" method="GET" >
+        <div class="input-control">
+            <label for="name">
+                <h1>Name</h1>
+            </label>
+            <input id="name" name="name" type="text">
+        </div>
+        <div class="input-control">
+            <label for="email">
+                <h1>Email</h1>
+            </label>
+            <input id="email" name="email" type="email">
+        </div>
+        <div class="input-control">
+            <label for="noTelp">
+                <h1>Telephone</h1>
+            </label>
+            <input id="noTelp" name="noTelp" type="tel">
+        </div>
+        <div>
+            <button type="submit" class="btn">Send</button>
+        </div>
+    </form>
+    </div>
 
       <!-- FOOOTERR---------------------------- -->
       <footer id="contact">
