@@ -30,6 +30,9 @@ async function orderCake() {
     const cake = document.getElementById('cake-variant').value;
     const cakeSum = document.getElementById('lname').value;
     const address = document.getElementById('subject').value;
+    const resMessage = document.getElementById('res-message');
+    console.log('berjalan');
+    console.log(resMessage);
     try {
         await fetch(`${API_BASE_URL}/consument`, {
             method: 'POST',
@@ -38,9 +41,16 @@ async function orderCake() {
             },
             body: JSON.stringify({ name, cake, cakeSum, address})
         });
+        
+        resMessage.innerHTML = `
+            <h3>Pesanan Terkirim!</h3>
+        `
 
     } catch (err) {
         console.log(err);
-    }
+        resMessage.innerHTML = `
+            <h3>Gagal tersimpan!</h3>
+        `
+    } 
     
 }
