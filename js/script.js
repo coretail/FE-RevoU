@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://be-2-surabaya-22-production.up.railway.app';
 
 async function fetchMenu() {
     const menuList = document.getElementById('item-menu')
