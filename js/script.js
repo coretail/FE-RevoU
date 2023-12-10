@@ -2,11 +2,11 @@ const API_BASE_URL = 'http://localhost:3000';
 
 async function fetchMenu() {
     const menuList = document.getElementById('item-menu')
-    console.log(menuList);
+
     try {
         const response = await fetch(`${API_BASE_URL}/menu`)
         const menu = await response.json();
-        console.log(menu);
+
         const menuListElement = menu.map((item) => {
             return `
             <section id="menu">
@@ -89,8 +89,7 @@ async function orderCake() {
     const cakeSum = document.getElementById('lname').value;
     const address = document.getElementById('subject').value;
     const resMessage = document.getElementById('res-message');
-    console.log('berjalan');
-    console.log(resMessage);
+
     try {
         await fetch(`${API_BASE_URL}/consument`, {
             method: 'POST',
