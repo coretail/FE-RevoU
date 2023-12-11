@@ -302,10 +302,12 @@ section#gallery div img:hover {
     /* display: inline; */
     /* padding: 60px; */
     text-align: center;
-    color: #a1560b;
+    color: #FFF7D4;
     font-size: 37px;
     margin-top: 30px;
-    
+    background-color: rgba(0, 0, 0, 0.75); /* Warna hitam dengan opacity 75% */
+    padding: 20px; /* Sesuaikan padding sesuai kebutuhan */
+    border-radius: 10px;
   }
 
 
