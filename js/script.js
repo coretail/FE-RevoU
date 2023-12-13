@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://be-2-surabaya-22-production.up.railway.app';
+const API_BASE_URL = 'mysql://root:FDe4cB6dbHde2ahf3ggB555215Eh-aEb@viaduct.proxy.rlwy.net:30058/railway';
 
 async function fetchMenu() {
     const menuList = document.getElementById('item-menu')
